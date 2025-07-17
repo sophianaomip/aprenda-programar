@@ -10,7 +10,7 @@ body{
 
 h1{
     border: 4px solid #050c38;
-    border-radius: 500px;
+    border-radius: 300px 0 300px 0;
     margin: 5%;
     padding: 10%;
     background-color: #e02f75;
@@ -37,7 +37,7 @@ strong{
 h2{
     border: 2px solid #1b2062;
     background-color: #e02f75;
-    border-radius: 50px;
+    border-radius: 50px 50px 50px 50px ;
    font-size: 70px;
    text-align: center;
     color: #fccbf0;
@@ -48,6 +48,7 @@ h2{
 
 p{
    font-size: 22px;
+   border-radius: 50px 0 50px 50px ;
    text-align: center; 
    color: #050c38;
 }
@@ -78,3 +79,4 @@ p1{
     font-size: 25px;
 
 }
+

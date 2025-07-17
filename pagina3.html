@@ -15,8 +15,8 @@
 
     <p>
      CSS (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets) é uma <strong>>linguagem de estilo
-      usada para descrever a apresentação de um documento escrito em HTML ou XML </strong>(como páginas web).
-       Simplificando, enquanto o HTML estrutura o conteúdo de um site (como textos, imagens, etc.), o CSS
+      usada para descrever a apresentação de um documento escrito em HTML ou XML </strong>(<em>como páginas web</em>).
+       Simplificando, enquanto o HTML estrutura o conteúdo de um site (<em>como textos, imagens, etc.)</em>, o CSS
         controla como esse conteúdo é exibido, definindo aspectos visuais como cores, fontes, layouts e espaçamentos. 
     </p>
 
@@ -39,7 +39,7 @@
          várias páginas HTML de uma só vez.
     <br>
 
-         <strong>Exemplo no HTML (&lt;head&gt;)</strong>:&lt;link rel="stylesheet" href="style.css"&gt;
+         <strong>Exemplo no HTML (&lt;head&gt;)</strong>:&lt;link rel="<em>stylesheet</em>" href="<em>style.css</em>"&gt;
     <br>
      
          <strong>Exemplo no arquivo style.css:</strong>
@@ -92,6 +92,214 @@
         
     </p1>
 
+    <h4>3.CSS Inline</h4>
+    <p1>
+          <strong>Função</strong>: As regras CSS são aplicadas diretamente a um elemento HTML
+           específico usando o atributo style.
+     <br>
+           <strong>Vantagemv</strong>: Útil para estilizar um único elemento sem afetar outros.
+     <br>
+           <strong>Desvantagem</strong>: Não é recomendado para estilos complexos ou reutilizáveis
+           , pois mistura HTML e CSS.
+     <br>
+
+          <strong>Exemplo no HTML</strong>:
+          &lt;p style="<em>color: blue; text-align: center;</em>"&gt;Este parágrafo está azul e centralizado.&lt;/p&gt;
+    </p1>
+
+    <h4>Seletores CSS</h4>
+    <p1>
+          Seletores são usados para "<em>selecionar</em>" os elementos HTML que você quer estilizar.
+     <br>
+           Seletor de Elemento (<em>Tipo</em>)
+     <br>
+           <strong>Função</strong>: Seleciona todos os elementos de um determinado tipo.
+     <br>
+           <strong>Exemplo</strong>:
+     <br>
+           p { /* Seleciona todos os parágrafos */
+     <br>
+           color: red;
+    <br>
+           }
+
+    </p1>
+
+    <h4>Seletor de Classe</h4>
+    <p1>
+         <strong>Função</strong>: Seleciona elementos que possuem um atributo &lt;class&gt; específico. Um mesmo
+          nome de classe pode ser usado em vários elementos.
+     <br>
+           No <strong>HTML</strong>: &lt;p class="destaque"&gt;Texto em destaque&lt;/p&gt;
+     <br>
+           No <strong>CSS</strong>:
+     <br>
+           .destaque { /* O ponto (.) indica que é uma classe */
+     <br>
+           background-color: yellow;
+     <br>
+           }
+
+    </p1>
+
+    <h4>Seletor de ID</h4>
+    <p1>
+         <strong>Função</strong>: Seleciona um único elemento com um atributo id específico. Cada
+          id deve ser único por página.
+     <br>
+           No <strong>HTML</strong>: &lt;h1 id="titulo-principal"&gt;Meu Título&lt;/h1&gt;
+     <br>
+           No <strong>CSS</strong>:
+     <br>
+           #titulo-principal { /* A hashtag (#) indica que é um ID */
+     <br>
+           font-size: 40px;
+     <br>
+           text-align: center;
+     <br>
+           }
+
+    </p1>
+
+<h5>Propriedades CSS Comuns</h5>
+
+
+      <p>Aqui estão algumas propriedades CSS fundamentais que você usará frequentemente:</p>
+
+      <h5>Propriedades de Texto e Fonte</h5>
+
+
+      <h4>&lt;color&gt;</h4>
+      <p1> 
+           <strong>Função</strong>: Define a cor do texto.
+     <br>
+           <strong>Exemplo</strong>: color: blue; ou color: #FF0000; ou color: rgb(255, 0, 0);
+
+     </p1>
+    
+     <h4> &lt;font-family&gt;</h4>
+     <p1>
+           <strong>Função</strong>: Define o tipo de fonte a ser usado.
+     <br>
+           <strong>Exemplo</strong>: font-family: Arial, sans-serif;
+
+     </p1>
+
+     <h4>&lt;font-size&gt;</h4>
+     <p1>
+           <strong>Função</strong>: Define o tamanho da fonte.
+     <br>
+           <strong>Exemplo</strong>: font-size: 16px; ou font-size: 1.2em;
+
+     </p1>
+     
+     <h4>&lt;font-weight&gt;</h4>
+     <p1>
+           <strong>Função</strong>: Define a espessura da fonte (negrito ou normal).
+     <br>
+           <strong>Exemplo</strong>: font-weight: bold; ou font-weight: 700;
+    
+     </p1> 
+     
+     <h4>&lt;text-align&gt;</h4>
+     <p1>
+           <strong>Função</strong>: Alinha o texto dentro de um elemento.
+     <br>
+           <strong>Valores</strong>: left, right, center, justify.
+     <br>
+           <strong>Exemplo</strong>: text-align: center;
+
+     </p1>
+
+     <h4>&lt;text-decoration&gt;</h4>
+     <p1>
+           <strong>Função</strong>: Adiciona ou remove decorações de texto, como sublinhado.
+     <br>
+           <strong>Valores</strong>: none, underline, overline, line-through.
+     <br>
+           <storng>Exemplo</strong>: text-decoration: none; (muito comum para remover sublinhado de links)
+     
+     </p1>
+
+ <h5>Propriedades de Caixa (<em>Box Model</em>)</h5>    
+
+      <p>O Box Model é um conceito fundamental no CSS que descreve como os elementos HTML são renderizados
+           como caixas retangulares.</p>
+
+      <h4>width e height</h4>     
+     <p1>
+           <strong>Função</strong>: Definem a largura e a altura de um elemento.
+     <br>
+           <strong>Exemplo</strong>: width: 200px; height: 150px;
+
+     <h4>padding</h4>
+      <p1>
+           <strong>Função</strong>: Define o espaçamento interno entre o conteúdo de um elemento e sua borda.
+     <br>
+           <strong>Exemplo</strong>: padding: 10px; (<em>para todos os lados</em>) ou padding: 10px 20px; (<em>topo/fundo, 
+           direita/esquerda</em>).
+     
+     </p1>
+
+    <h4>margin</h4>
+    <p1>
+           <strong>Função</strong>: Define o espaçamento externo ao redor de um elemento, criando espaço entre
+            ele e outros elementos.
+     <br>
+           <strong>Exemplo</strong>: margin: 20px; (<em>para todos os lados</em>) ou margin: 0 auto; (<em>para 
+           centralizar um bloco</em>).
+
+     </p1>
+
+     <h4>border</h4>
+     <p1>
+           <strong>Função</strong>: Define a borda de um elemento.
+     <br>
+           <strong>Exemplo</strong>: border: 1px solid black; (<em>espessura, estilo, cor</em>).
+
+     </p1>      
+
+<h5>Propriedades de Fundo e Cor</h5>
+
+
+      <h4>background-color</h4>
+     <p1>
+           <strong>Função</strong>: Define a cor de fundo de um elemento.
+     <br>
+           <strong>Exemplo</strong>: background-color: #F0F8FF;
+
+     </p1>
+
+      <h4>background-image</h4>
+      <p1>
+           <storng>Função</storng>: Define uma imagem como fundo de um elemento.
+     <br>
+           <strong>Exemplo</strong>: background-image: url(<em>'imagem-de-fundo.png'</em>);
+
+     </p1> 
+
+ <h5>Propriedades de Layout (<em>Básico</em>)</h5>  
+ 
+ 
+     <h4>display</h4>
+     <p1>
+             <strong>Função</strong>: Define como um elemento é exibido.
+     
+     <br>
+             <b>block</b>:Ocupa toda a largura disponível e força uma nova linha (<em>ex: &lt;div&gt;, &lt;p&gt;
+             </em>).
+      <br>
+             <b>inline</b>:Ocupa apenas o espaço necessário e não força uma nova linha (<em>ex: &lt;span&gt;,&lt;a&gt;
+            </em>). 
+      <br>
+             <b>inline-block</b>:Combina características de inline e block (<em>permite definir largura e altura,
+              mas se mantém na mesma linha</em>).
+      <br>
+             <b>none</b>: Oculta o elemento completamente.
+      <br>
+             <strong>Exemplo</strong>:display: block; ou display: inline-block;
+
+       </p1>
 
 </body>
 </html>
