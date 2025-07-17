@@ -4,7 +4,6 @@ body{
      margin: 5%;
      padding: -15%;
     box-sizing: content-box;
-    text-align: center;
       background-color: #f8dfee;
       color: #050c38;
 }
@@ -19,6 +18,7 @@ h1{
     font-size: 130px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
+    text-align: center;
 }
 
 p{
@@ -47,8 +47,8 @@ h2{
 }
 
 p{
-   font-size: 22px; 
-   text-align: center;
+   font-size: 22px;
+   text-align: center; 
    color: #050c38;
 }
 
@@ -70,5 +70,11 @@ h4{
 
 h5{
     font-size: 50px;
+    text-align: center;
     color: #e02f75;
+}
+
+p1{
+    font-size: 25px;
+
 }

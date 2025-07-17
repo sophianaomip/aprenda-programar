@@ -11,6 +11,7 @@
 
 <h5>Oque e HTML?</h5>
 
+
     <p>
      (<strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage)
       é a <strong>linguagem padrão usada para criar e estruturar páginas web</strong>.
@@ -19,123 +20,259 @@
          que organiza e formata o conteúdo para que os navegadores possam interpretá-lo corretamente. 
     </p>
 
-<h5 style="font-size: 40px;">Sugestão de Tags</h5>
+<h5 style="font-size: 40px;">Sugestão de Tags essenciais</h5>
+
+
+     <p>Para organizar as tags, vamos separá-las em categorias e usar uma estrutura de lista para 
+    facilitar a visualização e o aprendizado.</p>
+
+<h5>Estrutura Básica do Documento</h5>
+
 
    <h4> &lt;!DOCTYPE html&gt;:</h4>
-    <p>
-        é usada para informar ao navegador que o documento está escrito em HTML5, 
-        a versão mais recente da linguagem. 
-        <strong>É essencial colocar esta declaração no início de todo documento HTML, 
-            pois ela ajuda o navegador a renderizar a página corretamente.</strong>
-    </p>
+    <p1>
+        <strong>Função</strong>: Informa ao navegador que o documento está escrito em HTML5, a versão mais recente da linguagem.
+     <br> 
+        <strong>Observação</strong>: É essencial colocar esta declaração no início de todo documento HTML, pois ela ajuda o navegador
+         a renderizar a página corretamente.
+     <br>
+         <strong>Exemplo</strong>:&lt;!DOCTYPE html&gt;
+    </p1>
 
     <h4>&lt;head&gt;:</h4>
-    <p>
-        conhecida como <strong>cabeça</strong>, serve para inserir informações sobre o documento, 
-        como título, dados para mecanismos de busca e links para arquivos CSS e JavaScript.
-    </p>
+    <p1>
+        <strong>Função</strong>: Conhecida como cabeça, serve para inserir informações sobre o documento,
+         como título, dados para mecanismos de busca e links para arquivos CSS e JavaScript.
+    <br>
+         <strong>Fechamento</strong>: &lt;/head&gt;
+         <br>
 
-    <h4>&lt;/head&gt;:</h4>
-    <p>Tag de <strong>fechamento</strong> da cabeça:</p>
-    
-<h4>&lt;p&gt;:</h4>
-    <p>
-         conhecido como <strong>parágrafo</strong>, é um elemento de bloco, 
-        o que significa que ocupa toda a largura disponível e cria uma quebra de linha antes e depois do conteúdo.
-    </p>
-    
-<h4>&lt;/p&gt;</h4>
-    <p>Tag de <strong>fechamento</strong> para o parágrafo:</p>
-    
-    <h4>&lt;br&gt;:</h4>
-    <p>
-         é usada para inserir uma quebra de linha em um texto. 
-        Ela é uma tag vazia, ou seja, não precisa de uma tag de fechamento.
-    </p>
-    
-<h4>&lt;h1&gt;:</h4>
-    <p>
-         é usada para definir o<strong> título principal de
-             uma página ou seção</strong>.
-    </p>
-    
-<h4>&lt;/h1&gt;:</h4>
-    <p>
-        Tag de <strong>fechamento</strong> para o título principal: </p>
-    
-<h4>&lt;h6&gt;:</h4>
-<p>
-    é uma tag HTML utilizada <strong> para definir o sexto nível de cabeçalho
-         em uma página web.</strong>Ela faz parte da hierarquia de
-          tags de cabeçalho, que vão de &lt;h1&gt; (o mais importante)
-         até &lt;h6&gt; (o menos importante).
-</p>
+         <strong>Exemplo</strong>:
+    <br>
+         &lt;head&gt;
+    <br>
+         &lt;meta charset="utf-8"&gt;
+    <br>
+         &lt;title&gt;Meu Título&lt;/title&gt;
+    <br>
+         &lt;link rel="stylesheet" href="style.css"&gt;
+    <br>
+         &lt;/head&gt;
 
-<h4>&lt;/6&gt;:</h4>
-<p>
-    Tag de <strong>fechamento</strong> para o sexto nível de cabeçalho:
-</p>
-
-<h4>&lt;em&gt;:</h4>
-<p>
-    é usada para marcar texto que tem <strong>ênfase </strong>, normalmente
-     exibido em itálico pelo navegador.
- </p>
-
- <h4>&lt;/em&gt;:</h4>
- <p>Tag de <strong>fechamento</strong> para ênfase:</p>
-
- <h4>&lt;strong&gt;:</h4>
- <p>
-    é usada para definir texto com <strong>importância forte ou relevância.</strong>
-     Ela é interpretada pelos navegadores como um texto que deve 
-     ter destaque visual, geralmente em <strong>negrito</strong>, mas seu propósito principal
-      é semântico,<strong> indicando que o conteúdo dentro dela é mais importante do
-       que o texto ao redor</strong>. 
-    </p>
-
-    <h4>&lt;/em&gt;:</h4>
-    <p>Tag de <strong>fechamento</strong> para ênfase:</p>
-
-    <h4>&lt;button&gt;:</h4>
-    <p>
-        é usada para<strong> criar um botão clicável em páginas web</strong>, geralmente para
-         acionar ações como enviar formulários ou executar funções JavaScript.
-          Ela pode ser estilizada com CSS e, ao contrário da tag &lt;a&gt;,<strong> é mais adequada para
-             interações dentro da própria página</strong>, enquanto &lt;a&gt; é usada para links externos
-                 ou navegação entre páginas. 
-    </p>
-
-    <h4>&lt;/strong&gt;:</h4>
-    <p>Tag de <strong>fechamento</strong> para botão:</p>
-
-    <h4>&lt;style&gt;:</h4>
-    <p>
-        é usada para definir informações de <strong>estilo, como regras CSS (Cascading Style Sheets),
-         diretamente dentro de um documento HTML</strong>. Essa tag permite controlar a aparência 
-         visual dos elementos da página, como cores, fontes e layout, sem a necessidade 
-         de arquivos CSS externos.
-    </p>
-
-    <h4>&lt;style&gt;:</h4>
-    <p>Tag de <strong>fechamento</strong> para estilo:</p>
-
-    <h4>&lt;a href="link"&gt;:</h4>
-    <p>
-        A tag &lt;a&gt; em HTML é usada para <strong>criar links, e o atributo href especifica o destino do
-             link</strong>, ou seja, para onde o usuário será direcionado quando clicar no link. O href 
-             pode referenciar uma URL externa, um arquivo, um endereço de e-mail, ou até mesmo uma
-              seção dentro da mesma página. 
-    </p>
+    </p1>
 
     <h4>&lt;title&gt;:</h4>
-    <p>
-        define o <strong> título de uma página da web</strong>, que aparece na aba do navegador e nos resultados
-         de pesquisa, sendo um fator crucial para SEO e a experiência do usuário. 
-    </p>
+    <p1>
+        <strong>Função</strong>: Define o título de uma página da web, que aparece na aba do navegador e nos resultados
+         de pesquisa, sendo um fator crucial para SEO (uso de elementos e atributos HTML para otimizar páginas web
+          para mecanismos de busca, melhorando sua visibilidade e classificação nos resultados de pesquisa)
+           e a experiência do usuário.
+    <br>
+        <strong>Fechamento</strong>: &lt;/title&gt;
+    <br>
 
-    <h4>&lt;/tilte&gt;:</h4>
-<p>Tag de<strong> fechamento</strong> para título:</p>
+         <strong>Exemplo</strong>:&lt;title&gt;Minha Primeira Página&lt;/title&gt;
+
+        
+    </p1>
+
+    <h4>&lt;body&gt;:</h4>
+
+    <p1>
+        <strong>Função</strong>: Contém todo o conteúdo visível da página web, como textos,
+         imagens, links, vídeos, etc. É onde você constrói o corpo do seu site.
+    <br>
+        <strong>Fechamento</strong>: &lt;/body&gt; 
+    <br>
+
+         <strong>Exemplo</strong>:
+    <br>
+         &lt;body&gt;
+    <br>
+          &lt;h1&gt;Bem-vindo!&lt;/h1&gt;
+    <br>
+          &lt;p&gt;Este é o conteúdo da minha página.&lt;/p&gt;
+    <br>
+         &lt;/body&gt;
+
+    </p1>
+
+<h5>Tags de Texto e Formatação</h5>
+
+
+    <h4>&lt;h1&gt;a&lt;h6&gt;:</h4>
+    <p1> 
+         <strong>Função</strong>: Usadas para definir títulos e subtítulos em uma página ou seção.
+          &lt;h1&gt; é o título principal (o mais importante) e &lt;h6&gt; é o menos importante, seguindo uma hierarquia.
+    <br> 
+         <strong>Fechamento</strong>: &lt;/h1&gt; a &lt;/h6&gt;
+    <br>
+
+         <strong>Exemplo</strong>:
+    <br>
+         &lt;h1&gt;Título Principal&lt;/h1&gt;
+    <br>
+         &lt;h2&gt;Subtítulo Importante&lt;/h2&gt;
+    <br>
+          &lt;h6&gt;Subtítulo Menos Importante&lt;/h6&gt;
+
+    </p1>
+
+    
+    <h4>&lt;p&gt;:</h4>
+    <p1>
+         <strong>Função</strong>: Conhecido como parágrafo, é um elemento de bloco, o que significa que ocupa 
+         toda a largura disponível e cria uma quebra de linha antes e depois do conteúdo.
+     <br>
+         <strong>Fechamento</strong>: &lt;/p&gt;
+     <br>
+           
+         <strong>Exemplo</strong>:
+     <br>
+        &lt;p&gt;Este é um parágrafo de texto em HTML.&lt;/p&gt;
+     <br>
+       &lt;p&gt;Aqui está outro parágrafo.&lt;/p&gt;
+
+    </p1>
+
+    
+    <h4>&lt;br&gt;:</h4>
+    <p1>
+         <strong>Função</strong>: Usada para inserir uma quebra de linha em um texto. É uma tag vazia,
+          ou seja, não precisa de uma tag de fechamento.
+    <br>
+
+         <strong>Exemplo</strong>:
+         Este é um texto.&lt;br&gt;<br>
+         Ele terá uma quebra de linha aqui.  
+
+    </p1>
+    
+
+    <h4>&lt;em&gt;:</h4>
+     <p1>
+         <strong>Função</strong>: Usada para marcar texto que tem ênfase, normalmente exibido em itálico pelo navegador.
+     <br>   
+         <strong>Fechamento</strong>: </em>
+     <br>
+
+        <strong>Exemplo</strong>:
+        Você deve aprender &lt;em&gt;<em>HTML</em>&lt;/em&gt;.
+    
+    </p1>
+
+     <h4>&lt;strong&gt;:</h4>
+     <p1>
+         <strong>Função</strong>: Usada para definir texto com importância forte ou relevância.
+          É interpretada pelos navegadorescomo um texto que deve ter destaque visual, geralmente em negrito,
+           mas seu propósito principal ésemântico, indicando que o conteúdo dentro dela é mais importante do 
+           que o texto ao redor.
+    <br>
+         <strong>Fechamento</strong>: &lt;/strong&gt;
+    <br>
+
+         <strong>Exemplo</strong>:
+    <br>     
+        &lt;;strong&gt;<strong>Atenção:</strong>&lt;/strong&gt; Salve seu trabalho frequentemente.
+        
+    </p1>
+
+<h5>Tags de Mídia e Interatividade</h5>
+
+
+     <h4>&lt;img&gt;:</h4>
+     <p1>
+         <strong>Função</strong>: Usada para colocar uma única imagem em uma página da web. É um elemento
+          vazio (não possui conteúdo de texto ou tag de fechamento).
+    <br>
+         <strong>Atributo src</strong>: Especifica o caminho ou URL da imagem.
+    <br> 
+         <strong>Atributo alt</strong>: Fornece um texto alternativo para a imagem, usado em caso de falha
+          no carregamento da imagem ou por leitores de tela para pessoas com deficiência visual.
+    <br>
+        <strong>Atributos de dimensão (width, height)</strong>: Podem ser usados para especificar a largura e
+         a altura de um elemento, geralmente definidos com CSS.
+    <br>
+
+         <strong>Exemplo</strong>:
+         &lt;img src="minha-imagem.jpg" alt="Descrição da imagem" width="300" height="200"&gt;
+
+     </p1>
+
+     <h4>&lt;a&gt;:</h4>
+     <p1>
+         <strong>Função</strong>: Conhecida como tag de âncora (Anchor), é responsável por vincular os demais
+          documentos que o nosso HTML possui, links internos e externos.
+    <br>
+         <strong>Atributo href</strong>: Especifica o destino do link, ou seja, para onde o usuário será
+          direcionado quando clicar no link. O href pode referenciar uma URL externa, um arquivo, um endereço
+           de e-mail, ou até mesmo uma seção dentro da mesma página.
+    <br>
+         <strong>Fechamento</strong>: &lt;/a&gt;
+    <br>
+
+         <strong>Exemplo</strong>:
+    <br>
+          &lt;a href="https://www.google.com"&gt;Visite o Google&lt;/a&gt;
+    <br>
+         &lt;a href="contato.html"&gt;Entre em contato&lt;/a&gt;
+
+    </p1>
+
+
+    <h4>&lt;button&gt;:</h4>
+    <p1>
+         <strong>Função</strong>: Usada para criar um botão clicável em páginas web, geralmente para acionar
+          ações como enviar formulários ou executar funções JavaScript. Ela pode ser estilizada com CSS e, 
+          ao contrário da tag &lt;a&gt;, é mais adequada para interações dentro da própria página, enquanto &lt;a&gt;
+             é usada para links externos ou navegação entre páginas.
+    <br>
+         <strong>Fechamento</strong>: &lt;/button&gt;
+    <br>
+     
+         <strong>Exemplo</strong>:
+         &lt;button&gt;<button>em mim!</button>&lt;/button&gt;
+
+    </p1>
+    
+<h5>Tags de Estilo</h5>
+
+
+    <h4>&lt;style&gt;:</h4>
+    <p1>
+         <strong>Função</strong>: Usada para definir informações de estilo, como regras CSS (Cascading
+          Style Sheets), diretamente dentro de um documento HTML. Essa tag permite controlar a aparência 
+          visual dos elementos da página, como cores, fontes e layout, sem a necessidade de arquivos CSS externos.
+    <br>
+         <strong>Fechamento</strong>: &lt;/style&gt;
+    <br>
+
+         <strong>Exemplo</strong>:
+        <br>
+        &lt;head&gt;
+    <br>    
+         &lt;style&gt;
+    <br>
+        body {
+    <br>
+            font-family: Arial, sans-serif;
+    <br>
+            background-color: lightblue;
+    <br>
+         }
+    <br>
+         h1 {
+    <br>
+            color: navy;
+    <br>
+         }
+    <br>
+          &lt;/style&gt;
+    <br>
+         &lt;/head&gt;
+
+    </p1>
+
 
 </body>
 </html>
