@@ -4,17 +4,17 @@ body{
      margin: 5%;
      padding: -15%;
     box-sizing: content-box;
-      background-color: #f8dfee;
-      color: #050c38;
+     color: #050c38;
+      background-image: linear-gradient(#f2e6ee, #ffccf2);
 }
 
 h1{
-    border: 4px solid #050c38;
+    border: 4px solid #000000;
     border-radius: 300px 0 300px 0;
     margin: 5%;
     padding: 10%;
-    background-color: #e02f75;
-    color: #050c38;
+    background-color: #00033d;
+    color: #b0aff4;
     font-size: 130px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
@@ -23,7 +23,7 @@ h1{
 
 p{
     border: 2px solid #1b2062;
-    background-color: #fccbf0;
+    background-color: #f2e6ee;
    font-size: 22px;
    margin: 0%;
    padding: 1%;
@@ -31,16 +31,16 @@ p{
 
 strong{
     font-size: 25px;
-    color: #e02f75;
+    color: #f09410;
 }
 
 h2{
-    border: 2px solid #1b2062;
-    background-color: #e02f75;
+    border: 2px solid #000000;
+    background-color: #00033d;
     border-radius: 50px 50px 50px 50px ;
    font-size: 70px;
    text-align: center;
-    color: #fccbf0;
+    color: #b0aff4;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     margin: 10%;
@@ -61,7 +61,7 @@ h3{
 }
 
 a{
-    font-size: 30px;
+    font-size: 40px;
  }
 
 
@@ -72,7 +72,7 @@ h4{
 h5{
     font-size: 50px;
     text-align: center;
-    color: #e02f75;
+    color: #030059;
 }
 
 p1{
